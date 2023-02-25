@@ -1,0 +1,54 @@
+/* h1 {
+    margin-top: 16px;
+    padding: 20px;
+    font-weight: 300px;
+    font-style: italic;
+    font-size: 40px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 10px 30px 35px yellowgreen;
+    background-color: brown;
+    text-align: center;
+}
+
+.div1 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 590px;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    float: right;
+    padding: 30px;
+    background-color: aqua;
+
+}
+
+a:hover {
+
+
+    background-color: orangered;
+    color: #000;
+    margin: 10px solid black;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+
+
+} */
+
+h1{
+    cursor: pointer;
+    color: #424242;
+    font: 800 3rem "Montserrat";
+    transition: .5s;
+}
+h1:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+
+}

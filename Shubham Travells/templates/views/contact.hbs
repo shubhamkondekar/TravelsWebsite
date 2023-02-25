@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    {{>nav}}
+    <h1>Contact Us</h1>
+
+    <div class="hero">
+        <form action="/contact" method="POST">
+            <div class="row">
+
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+    
+                <div class="input-group">
+                    <input type="text" id="mobile_number" name="mobile_number" required>
+                    <label for="mobile_number">Mobile Number</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="email" name="email" required>
+                <label for="email">Email Id</label>
+            </div>
+
+            <div class="input-group">
+                <textarea id="message" rows="10" name="message" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+
+            <button id="contact1" type="submit">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+    document.getElementById("contact1").addEventListener("click",contact)
+    function contact(){
+        alert("Thank You for Contact ");
+    }
+</script>

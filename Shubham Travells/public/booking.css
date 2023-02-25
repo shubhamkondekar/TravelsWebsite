@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: aquamarine; */
+    background: url(images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.container{
+    margin-top: 300px;
+    width: 200px;
+    height: 1000px;
+    background: #fff;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: black;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 50px;
+}
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.container div{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.container input{
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 3px yellowgreen;
+}
+
+.container input[type="email"],input[type="password"],input[type="text"],input[type="number"],input[type="date"],input[type="time"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.container input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius:20px ;
+    box-shadow: 0 2px 10px springgreen;
+}
+.container div .date{
+    color: gray;
+}
+.container div .time{
+    color: gray;
+}
+.container option{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: red;
+    font-size: 16px;
+
+}
+.container select{
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 3px yellowgreen;
+    
+}
+.container select{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: gray;
+    font-size: 16px;
+}
+.container select input{
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 3px orangered;
+}
+.container input[type="submit"]:hover{
+    cursor: pointer;
+    background: gray;
+    color: #000;
+}

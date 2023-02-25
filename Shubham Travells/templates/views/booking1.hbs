@@ -1,0 +1,114 @@
+
+        
+
+
+{{!-- 2 --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+    {{>nav}}
+    <div class="container">
+
+
+        <h1>Booking Now </h1>
+        
+        <form action="/booking" method="POST">
+    
+        <div>
+            <label>Name</label>
+            <input type="text" placeholder="Enter a name" name="name">
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" placeholder="Enter a email" name="email">
+        </div>
+
+
+        <div>
+            <label>Car Name</label>
+            <select name="car_name">
+                <option selected>Choose one</option> 
+                <optgroup label="4 Seater Cars">
+                <option >Dzire</option>
+                <option >Aspire</option>
+                <option >Etios</option>
+                <option >Indigo</option>
+                </optgroup>
+
+                <optgroup label="7 Seater Cars">
+                <option >Marrozo</option>    
+                <option >Ertiga</option>
+                <option>Innova</option>
+                </optgroup>
+
+
+                <optgroup label="9 Seater Cars">
+                <option >Tavera</option>
+                <option >Scorpio</option>
+                <option >Xylo</option>
+                </optgroup>
+
+                <optgroup label="Bus/Travels">
+                <option >13 Seater Bus</option>
+                <option >17 Seater Bus</option>
+                <option >30 Seater Bus</option>
+                <option >50 Seater Bus</option>
+                </optgroup>
+
+                
+            </select>
+        </div>
+
+        <div>
+            <label >Jorney Date</label>
+            <input type="date" name="jorney_date">
+        </div>
+
+        {{!-- <div>
+            <label >Jorney Time</label>
+            <input type="number" name="jorney_time">
+        </div> --}}
+
+       
+
+       
+        <div>
+            <label>Destination Start</label>
+            <input type="text" placeholder="Enter a password" name="destination_start">
+        </div>
+
+        <div>
+            <label>Destination End</label>
+            <input type="text" placeholder="Enter a password" name="destination_end">
+        </div>
+
+        <div>
+            <label>Address</label>
+            <input type="text" placeholder="Enter a password" name="address">
+        </div>
+
+
+        <div>
+            <label>Mobile Number</label>
+            <input type="number" placeholder="Enter a password" name="mobile_number">
+        </div>
+
+        <!-- <button type="submit">Submit</button> -->
+        <input type="submit" value="Submit">
+
+    </form>
+    </div>
+</body>
+
+</html>

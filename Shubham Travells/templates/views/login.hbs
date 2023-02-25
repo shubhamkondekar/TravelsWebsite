@@ -1,0 +1,56 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Login System</h1>
+    <hr>
+    <form action="/login" method="POST">
+        <div>
+    <label >Name</label>
+    <input type="email" placeholder="Enter a email" name="email" >
+</div>
+<div>
+    <label >Password</label>
+    <input type="password" placeholder="Enter a password" name="password" >
+</div>
+<button type="submit">Login</button>
+    </form>
+    
+</body>
+</html> --}}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+{{>nav}}
+    <div class="loginbox">
+        <img src="images/avtar.png" class="avtar" alt="">
+        <h1>Login Here</h1>
+        <form action="/login" method="POST">
+            <p>Username</p>
+            <input type="email" name="email" placeholder="Enter Email" required name="email">
+            <p>Password</p>
+            <input type="password"  placeholder="Enter Password" required name="password">
+            <input type="submit" name="" value="Login">
+
+        </form>
+    
+    </div>
+
+    
+</body>
+</html>

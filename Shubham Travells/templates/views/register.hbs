@@ -1,0 +1,46 @@
+{{!-- 2 --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="regi.css">
+</head>
+<body>
+{{>nav}}
+    <div class="loginbox">
+        <img src="images/avtar.png" class="avtar" alt="">
+        <h1>Registration Here</h1>
+        <form action="/register" method="POST">
+            <p>Name</p>
+            <input type="text" placeholder="Enter a name" name="name">
+            <p>Email</p>
+            <input type="email" placeholder="Enter a email" name="email">
+            <p>Age</p>
+            <input type="number" placeholder="Enter a age" name="age">
+            <p>Password</p>
+            <input type="password" placeholder="Enter a password" name="password">
+            <p>Confirm Password</p>
+            <input type="password" placeholder="Enter a password" name="cpassword">
+            
+            {{!-- <input onclick=" type="submit" name="" value="Register"> --}}
+            <button onclick="register()" type="submit" value="Register">Register</button>
+
+        </form>
+    
+    </div>
+
+    
+</body>
+</html>
+
+{{!-- <script>
+    function register(){
+        alert("Your Registration Complete")
+
+    }
+</script> --}}
+
+
